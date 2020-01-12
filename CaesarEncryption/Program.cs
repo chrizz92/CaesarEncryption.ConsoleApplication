@@ -39,7 +39,7 @@ namespace CaesarEncryption
                             encryptedChar = (char)(encryptedChar + caesarNumber);
                             if (encryptedChar > 90)
                             {
-                                encryptedChar = (char)(encryptedChar - 25);
+                                encryptedChar = (char)(encryptedChar - 26);
                             }
                             outputSentence += encryptedChar;
                         }
@@ -74,7 +74,7 @@ namespace CaesarEncryption
                                 encryptedChar = (char)(encryptedChar - k);
                                 if (encryptedChar < 65)
                                 {
-                                    encryptedChar = (char)(encryptedChar + 25);
+                                    encryptedChar = (char)(encryptedChar + 26);
                                 }
                             }
                             Console.Write(encryptedChar);
